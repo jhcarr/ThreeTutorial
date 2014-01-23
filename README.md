@@ -4,10 +4,10 @@ learning with [Three.js, the WebGL library](http://threejs.org/).
 Though I think this library is super cool, I am in no way affiliated
 with its creators and the content I create is in no way endorsed by
 the people at Three.js. I'm just a dude, learning stuff, and putting
-what I learn on the internet. Because I'm nice.
+what I learn on the internet because I'm nice.
 
 ## Using and Exploring ThreeTutorial
-Copy or fork this project as you would and open up the file called
+Copy or fork this project as you would normally and open up the file called
 "start.html" in your favorite [WebGL-compatible browser](http://caniuse.com/webgl "Common browsers
 by WebGL compatibility").
 
