@@ -18,11 +18,14 @@ var cube2Material = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
 var cube2 = new THREE.Mesh( cube2Geometry, cube2Material );
 scene.add( cube2 );
 
-var radius = 5,
-    segments = 16, 
-    rings = 16;
+var radius = 1,
+    segments = 8, 
+    rings = 8;
 
-var ballMaterial = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
+var ballMaterial = new THREE.MeshBasicMaterial({
+    color: 0x0000ff, 
+    wireframe: true
+});
 
 var ball = new THREE.Mesh(
     new THREE.SphereGeometry(
@@ -36,14 +39,16 @@ scene.add( ball );
 // WORLD SPACE
 
 cube2.position.x = 2;
-ball.position.z = -10;
+ball.position.x = -2;
 camera.position.z = 5;
 
 function render() {
     requestAnimationFrame(render);
     
-    cube.rotation.x += 0.1;
-    cube.rotation.y += 0.1;
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.02;
+    ball.rotation.x += 0.01;
+    ball.rotation.y += 0.02;
     
     renderer.render(scene, camera);
 }
